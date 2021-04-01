@@ -44,9 +44,7 @@ public class PrincipalController implements Initializable, ChangeListener {
         G = vertSlider.getValue();
         B = bleuSlider.getValue();
 
-        //Color couleur = Color.rgb(255-R.intValue(), 255-G.intValue(), 255-B.intValue());
         result.setFill(Color.rgb( R.intValue(), G.intValue(), B.intValue()));
-        //fond.setBackground(new Background(new BackgroundFill(couleur, CornerRadii.EMPTY, Insets.EMPTY)));
     }
     }
 
