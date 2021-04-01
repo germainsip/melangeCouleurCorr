@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="fond" stylesheets="@materiaPlus.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.petersix.gui.PrincipalController">
+    <children>
+      <VBox layoutX="14.0" layoutY="15.0" prefHeight="508.0" prefWidth="684.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                    <Label alignment="CENTER" prefHeight="62.0" prefWidth="200.0" styleClass="card" text="Le Mélangeur">
+                        <font>
+                            <Font name="Avenir Next Bold" size="20.0" />
+                        </font>
+                    </Label>
+                  <Label fx:id="detail" text="Label">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin></Label>
+               </children>
+            </HBox>
+              <Pane fx:id="resultPane" prefHeight="269.0" prefWidth="660.0" style="-fx-background-color: white;" styleClass="card">
+                  <effect>
+                      <InnerShadow />
+                  </effect>
+                  <children>
+                      <Rectangle fx:id="result" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="240.0" layoutX="14.0" layoutY="15.0" stroke="TRANSPARENT" strokeType="INSIDE" width="628.0">
+                          <effect>
+                              <InnerShadow />
+                          </effect>
+                      </Rectangle>
+                  </children>
+              </Pane>
+              <HBox prefHeight="132.0" prefWidth="628.0" spacing="60.0" styleClass="card" stylesheets="@materiaPlus.css">
+                  <children>
+                      <VBox prefHeight="112.0" prefWidth="308.0" spacing="20.0">
+                          <children>
+                              <HBox prefHeight="17.0" prefWidth="225.0">
+                                  <children>
+                                      <Label prefWidth="80.0" text="Rouge" />
+                                      <JFXSlider fx:id="rougeSlider" majorTickUnit="30.0" max="255.0" minorTickCount="10" prefHeight="33.0" prefWidth="220.0" value="1.0" />
+                                  </children>
+                              </HBox>
+                              <HBox prefHeight="17.0" prefWidth="225.0">
+                                  <children>
+                                      <Label prefWidth="80.0" text="Vert" />
+                                      <JFXSlider fx:id="vertSlider" majorTickUnit="30.0" max="255.0" prefHeight="16.0" prefWidth="220.0" value="1.0" />
+                                  </children>
+                              </HBox>
+                              <HBox prefHeight="17.0" prefWidth="225.0">
+                                  <children>
+                                      <Label prefWidth="80.0" text="Bleu" />
+                                      <JFXSlider fx:id="bleuSlider" majorTickUnit="30.0" max="255.0" prefHeight="220.0" prefWidth="220.0" value="1.0" />
+                                  </children>
+                              </HBox>
+                          </children>
+                      </VBox>
+                      <VBox spacing="15.0">
+                          <children>
+                              <Pane prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: red;">
+                                  <effect>
+                                      <InnerShadow />
+                                  </effect>
+                              </Pane>
+                              <Pane prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: green;">
+                                  <effect>
+                                      <InnerShadow />
+                                  </effect>
+                              </Pane>
+                              <Pane prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: blue;">
+                                  <effect>
+                                      <InnerShadow />
+                                  </effect>
+                              </Pane>
+                          </children>
+                      </VBox>
+                  </children>
+              </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+    </children>
+</AnchorPane>
